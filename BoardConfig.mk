@@ -24,5 +24,10 @@ TARGET_OTA_ASSERT_DEVICE := d2spr
 # include
 -include vendor/samsung/d2spr/BoardConfigVendor.mk
 
-# kernel
-TARGET_KERNEL_CONFIG := cyanogen_d2spr_defconfig
+# Assert
+TARGET_OTA_ASSERT_DEVICE := d2spr,d2spi
+
+# Kernel
+TARGET_KERNEL_CONFIG    := cyanogen_d2spr_defconfig
+
+TARGET_BOARD_INFO_FILE ?= device/samsung/d2spr/board-info.txt
