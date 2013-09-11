@@ -15,11 +15,11 @@
 # limitations under the License.
 #
 
-# device
-$(call inherit-product, device/samsung/d2spr/device.mk)
-
 # telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# device
+$(call inherit-product, device/samsung/d2spr/device.mk)
 
 # product
 PRODUCT_NAME := liquid_d2spr
